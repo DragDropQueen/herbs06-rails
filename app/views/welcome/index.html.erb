@@ -1,1 +1,12 @@
-Welcome
+<h1>Check out my sweet herbs.</h1>
+<hr>
+<form action="/" method="post">
+  <input type="text" placeholder="Herb Name" name="herb_name">
+  <input type="submit" value="Add">
+</form>
+<hr>
+<ul>
+<% @herbs.each do |herb| %>
+  <li><%= herb.name %></li>
+<% end %>
+</ul>
